@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuaMacros</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>LuaMacros</h1>
+    <h2>Disclaimer</h2>
+    <p>Don't use this software. Really. It's difficult to use, has bugs and the author has very little time to maintain it. It was written just to connect multiple keyboards to a flight simulator (X-Plane) to control different knobs and buttons in the plane/helicopter. The author is using it just for this purpose.</p>
+    <p>It can do many things, but you need to understand what you are doing and you definitely <strong>need to know and use the Lua scripting language</strong>. If you just found LuaMacros by a Google search or saw some nice YouTube videos, but don't know how to write a Lua script it will be painful to get what you want, and you will end up frustrated. Please, don't use it in this case.</p>
+    <p>There's a support forum available at <a href="http://www.hidmacros.eu/forum">http://www.hidmacros.eu/forum</a> where you can ask how things work, see example scripts, etc. But please don't expect I will write Lua scripts for you or teach you Lua.</p>
+    <p>If you know Lua or are able to learn it first, if you understand what example scripts are doing and are not afraid of spending some time playing with it, enjoy LuaMacros.</p>
+
+    <h2>About</h2>
+    <p>This software can recognize and manage multiple keyboards connected to a computer with Windows OS. This is the key feature to use it as macro-triggerring application.</p>
+    <p>Other typical usage is for flight simulation when macro triggers can come from various sources like:</p>
+    <ul>
+        <li>different keyboards</li>
+        <li>game devices (joysticks)</li>
+        <li>COM interface (Arduino)</li>
+        <li>small embeded HTTP server</li>
+        <li>game simulator itself - X-Plane, on variable change</li>
+    </ul>
+
+    <p>Macro action can be anything scripted in the Lua language with some extensions:</p>
+    <ul>
+        <li>serial communication</li>
+        <li>X-Plane simulator events (commands, data ref changes)</li>
+        <li>HTTP GET</li>
+        <li>OS commands</li>
+    </ul>
+
+    <h2>Download</h2>
+    <p>Download <a href="http://www.hidmacros.eu/luamacros.zip">luamacros.zip</a></p>
+
+    <h2>Developers Guide</h2>
+    <p>Compiling LuaMacros requires some dependencies and a specific free Pascal version. See the <a href="DevGuide.md">detailed guide</a> to get it working.</p>
+</body>
+</html>
